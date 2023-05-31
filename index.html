@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pak-Wheels</title>
+    <link rel="shortcut icon" href="/pak-wheels-logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="pak-wheels-logo.svg" id="pak-wheels-logo" alt="">
+        <div id="search-container">
+            <input type="search" id="search-input" placeholder="Search product name here.." />
+            <button id="search">Search</button>
+        </div>
+        <div id="buttons">
+            <button class="button-value" onclick="filterProduct('all')">All</button>
+            <button class="button-value" onclick="filterProduct('Toyota')">
+          Toyota
+        </button>
+            <button class="button-value" onclick="filterProduct('Honda')">
+          Honda
+        </button>
+            <button class="button-value" onclick="filterProduct('Hundayi')">
+          Hundayi
+        </button>
+        </div>
+        <div id="products"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
